@@ -403,7 +403,7 @@
 	<!--end Our Ambassadors-->
 
 	<section class="container " id="list-posts"> 
-	    <div class="masonry">
+	    <div class="masonry" id="mansonryContainer">
 	    	<div class="item embeb-type">
 	    		<blockquote class="twitter-tweet" lang="en"><p lang="es" dir="ltr">.<a href="https://twitter.com/Cristiano">@Cristiano</a>: “El equipo está jugando bien y los goles vienen de forma natural&quot; 👆👌<a href="https://t.co/9ylZiBF2oS">https://t.co/9ylZiBF2oS</a><a href="https://twitter.com/hashtag/RMLiga?src=hash">#RMLiga</a> <a href="https://t.co/tWGum5Aab7">pic.twitter.com/tWGum5Aab7</a></p>&mdash; Real Madrid C. F. (@realmadrid) <a href="https://twitter.com/realmadrid/status/693939044594528257">January 31, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -587,10 +587,10 @@
 
 	  </div>
 	<!--end masonry-->
-	<div class="navigation">
+	<div class="iasNavigation">
         <ul>
             <li>1</li>
-            <li class="next-posts"><a href="home-article.html">2</a></li>
+            <li><a href="home-article.html">2</a></li>
         </ul>
     </div>
 	</section>
@@ -636,19 +636,21 @@
     <script src="assets/javascripts/jquery.sticky-kit.min.js"></script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ed11e811f44d3ef" async="async"></script>  
     <script type="text/javascript" src="assets/javascripts/slick.min.js"></script>	  
-     <script type="text/javascript" src="assets/javascripts/jquery-ias.min.js"></script>	 
+    <script type="text/javascript" src="assets/javascripts/jquery-ias.min.js"></script>	 
   	<script src="assets/javascripts/main.js"></script>
   	<!-- call slick -->
   	<script type="text/javascript">
+	  	var ias = $.ias({
+	  	  container: '#mansonryContainer',
+	  	  item: '.item',
+	  	  pagination: '.iasNavigation',
+				next: '.nextPosts a'
+	     });
+	  	ias.extension(new IASSpinnerExtension(
+	  		{html: '<div class="loading center"><img alt="" src="assets/images/loading.gif"><p>LOADING...</p></div>'}    
+	  	));
+	  	
 	    $(document).ready(function(){
-	    	$.ias({
-                container : '#list-posts .masonry',
-                item: '.item',
-                pagination: '.navigation',
-                next: '.next-posts a',
-                loader: '<div class="loading center"><img alt="" src="assets/images/loading.gif"><p>LOADING...</p></div>',
-                triggerPageThreshold: 2
-            });
 			$('.slideshow-container').slick({
 			 	dots: false,
 				infinite: true,
