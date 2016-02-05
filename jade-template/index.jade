@@ -1,0 +1,404 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title Home Page
+    link(href="assets/css/app.css", rel="stylesheet")
+    link(rel="apple-touch-icon", type="image/png", href="apple-touch-icon.png")
+    link(rel="icon", href="favicon.ico")
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    //
+      if lt IE 9script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
+            script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
+  body
+    header#header.header
+      .top-bar.clearfix.hidden-xs
+        ul.pull-right.menu-social
+          li
+            a(href="#")
+              span.icon-facebook
+          li
+            a(href="#")
+              span.icon-twitter
+        ul.pull-right.menu-top
+          li.active
+            a(href="#") Contact us
+          li
+            a(href="#") Login
+      .masthead
+        .container
+          .logo.pull-left
+            a(href="")
+              img(src="assets/images/logo.png", alt="SportSta")
+          .navbar-header.pull-right
+            // toogle button
+            button.navbar-toggle.collapsed(aria-expanded="false", aria-controls="bs-navbar", data-target="#bs-navbar", data-toggle="collapse", type="button")
+              span.bar-icon
+              span.bar-icon
+              span.bar-icon
+              span.close(aria-hidden="true") &#215;
+          // end navbar-header
+          .pull-right.menu-page-container.hidden-xs
+            .cta.pull-right
+              a.cta-button(href="#") Become an Ambassador
+            ul.menu-page.pull-right
+              li
+                a(href="#") About Sportsta
+              li
+                a(href="#") Greatest Athlete
+      .navigation
+        .container
+          nav#bs-navbar.collapse.navbar-collapse
+            .title-menu.visible-xs-block Browse by Sport
+            ul.nav.navbar-nav
+              li.active
+                a(href="#") All
+              li
+                a(href="#") RUGBY LEAGUE 
+              li
+                a(href="#") AUSSIE RULES 
+              li
+                a(href="#") SURFING 
+              li
+                a(href="#") Rugby Union
+              li
+                a(href="#") Cricket
+              li
+                a(href="#") SoCCER 
+            // menu-page for mobile
+            .menu-page-container.visible-xs-block
+              ul.menu-page
+                li
+                  a(href="#") About Sportsta
+                li
+                  a(href="#") Greatest Athlete
+              .cta
+                a.cta-button(href="#") Become an Ambassador
+            // end menu-page for mobile
+      // end navigation
+    // end header
+    .feature-ad
+      .container
+        img(src="assets/images/feature-ad.jpg", alt="ripcurlc")
+    .feature-image.hidden-xs
+      img(src="assets/images/feature-hero.jpg", alt="")
+    section.container.main
+      .main-content
+        #content.row.row-eq-height
+          .col-md-8.col-sm-7.col-xs-12
+            .articles.clearfix
+              article.post
+                header.entry-header
+                  .feature-image.visible-xs(style="background-image: url(assets/images/feature-hero.jpg)")
+                  .entry-header-content
+                    .meta-header
+                      a.tag(href="") Surfing
+                      span.date 20m ago
+                    h2
+                      | Dion Agius:
+                      br
+                      | Takes out WSL Title in Maui
+                    ul.meta-data
+                      li
+                        a.view-comment-detail(href="#", data-target="#comment-area")
+                          span#disqus-comment-count.disqus-comment-count 0
+                          span.icon-comments
+                      li
+                        | 226
+                        span.icon-views
+                      li
+                        | 388
+                        span.icon-shares
+                .visible-xs.author-box-container
+                  .author-box
+                    a.thumbnail-img(href="#")
+                      img.media-object(width="50", src="assets/images/author01.png", alt="...")
+                    .media-heading Posted by Mick Fanning , 22 Nov 2015 
+                  // end author-box
+                  ul.manufacture-box
+                    li
+                      a(href="")
+                        img(src="assets/images/brand/redbull.png", alt="redbull")
+                    li
+                      a(href="")
+                        img(src="assets/images/brand/ripcurl.png", alt="ripcurl")
+                    li
+                      a(href="")
+                        img(src="assets/images/brand/fcs.png", alt="fcs")
+                // end box-author (this box for mobile only)
+                .article-content
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  .image-caption.pull-left
+                    a(href="#")
+                      img.img-responsive(src="assets/images/img-cap.png", alt="")
+                      .desc The pack, the basic unit of wolf social life.
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  blockquote
+                    | This is an example of a pull quote. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    p
+                      | Dusty Payne (@dusty_payne)
+                      span Dec 5, 2015
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  .instagram-box.pull-left
+                    blockquote.instagram-media(data-instgrm-version="6", style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);")
+                      div(style="padding:8px;")
+                        div(style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;")
+                          div(style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;")
+                        p(style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;")
+                          a(href="https://www.instagram.com/p/BAzZn_bi3L4/", style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;", target="_blank") A photo posted by Samuel Strand H. (@sshollund)
+                          | on
+                          time(style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;", datetime="2016-01-21T13:41:26+00:00") Jan 21, 2016 at 5:41am PST
+                    script(async="", defer="", src="//platform.instagram.com/en_US/embeds.js")
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  p.embed-responsive.embed-responsive-16by9
+                    iframe.embed-responsive-item(src="https://player.vimeo.com/video/103773552", width="500", height="281", allowfullscreen="")
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                footer.entry-footer.meta-footer
+                  .social-box
+                    .addthis_sharing_toolbox
+                  // end addthis
+                  .author-box
+                    .media
+                      .pull-left
+                        a.thumbnail-img(href="#")
+                          img.media-object(width="50", src="assets/images/author01.png", alt="...")
+                      .media-body
+                        h4.media-heading Posted by Mick Fanning
+                        span.date 22 Nov 2015
+                  .comment-box.center
+                    .view-comment(data-target="#comment-area")
+                      | View Comments (
+                      a(href="#disqus_thread")
+                      | )
+                    #comment-area.comment-area
+                      #disqus_thread
+                      script.
+                        /**
+                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                        */
+                        /*
+                        var disqus_config = function () {
+                        this.page.url = 'http://localhost/pollen-sportsta/';  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = "http://localhost/pollen-sportsta/"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                        */
+                        var disqus_shortname = "stagging-pollensta";
+                        (function() {  // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = '//'+ disqus_shortname +'.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                        s1 = d.createElement('script');
+                        s1.src = '//'+ disqus_shortname +'.disqus.com/count.js';
+                        s1.setAttribute('id','dsq-count-scr');
+                        s1.setAttribute('async',true);
+                        (d.head || d.body).appendChild(s1);
+                        document.getElementsByClassName("disqus-comment-count")[0].setAttribute("data-disqus-url",window.location.href + "#disqus_thread");
+                        })();
+                      noscript
+                        | Please enable JavaScript to view the
+                        a(href="https://disqus.com/?ref_noscript", rel="nofollow") comments powered by Disqus.
+          #sidebar-right.col-md-4.col-sm-5.col-xs-12.sidebar-right
+            .author-box.hidden-xs
+              .media
+                .pull-left
+                  a.thumbnail-img(href="#")
+                    img.media-object(width="50", src="assets/images/author01.png", alt="...")
+                .media-body
+                  h4.media-heading Posted by Mick Fanning
+                  span.date 22 Nov 2015
+            // end author-box
+            ul.manufacture-box.hidden-xs
+              li
+                a(href="")
+                  img(src="assets/images/brand/redbull.png", alt="redbull")
+              li
+                a(href="")
+                  img(src="assets/images/brand/ripcurl.png", alt="ripcurl")
+              li
+                a(href="")
+                  img(src="assets/images/brand/fcs.png", alt="fcs")
+            .social-box.hidden-xs
+              .addthis_sharing_toolbox
+            // end social-box
+            #sticky.ad-box
+              a(href="")
+                img(src="assets/images/banner01.jpg", alt="")
+            // end ad-box
+            #editor-pick.editor-pick
+              h3 Editors Picks
+              .item-pick
+                .intro-img.pull-left
+                  a(href="")
+                    img(width="108", src="assets/images/editor-pick01.png", alt="")
+                .item-pick-body
+                  h4
+                    a(href="") Hayne"s rookie NFL season report card
+                  .item-pick-bottom
+                    a.tag(href="#") NEL
+                    span.date 2 hours ago
+              .item-pick
+                .intro-img.pull-left
+                  a(href="")
+                    img(width="108", src="assets/images/editor-pick02.png", alt="")
+                .item-pick-body
+                  h4
+                    a(href="") David Villa to join Melbourne Victory on 12 game contract
+                  .item-pick-bottom
+                    a.tag(href="#") A-League
+                    span.date 12 hours ago
+              .item-pick
+                .intro-img.pull-left
+                  a(href="")
+                    img(width="108", src="assets/images/editor-pick03.png", alt="")
+                .item-pick-body
+                  h4
+                    a(href="") Liverpool FC Legends vs. Legendroos 2016 tour set to go ahead regardless...
+                  .item-pick-bottom
+                    a.tag(href="#") Football
+                    span.date 1 hours ago
+              .item-pick
+                .intro-img.pull-left
+                  a(href="")
+                    img(width="108", src="assets/images/editor-pick04.png", alt="")
+                .item-pick-body
+                  h4
+                    a(href="") Danny Green KOs "Maggot" Coward Punchers
+                  .item-pick-bottom
+                    a.tag(href="#") Boxing
+                    span.date 2 hours ago
+            // end Editors Picks
+          // end sidebar-right
+      .related-article
+        h2.title Related articles
+        article
+          .article-image
+            a(href="")
+              img(src="assets/images/article01.jpg", alt="")
+          .article-content
+            h3.heading
+              a(href="") Craig Anderson leading WSL title by 2pt after first place in last heat
+            ul.meta-data
+              li
+                a(href="#")
+                  | 16
+                  span.icon-comments
+              li
+                | 226
+                span.icon-views
+              li
+                | 388
+                span.icon-shares
+        article
+          .article-image
+            a(href="")
+              img(src="assets/images/article02.jpg", alt="")
+          .article-content
+            h3.heading
+              a(href="") What you need to know about Kelly Slater&#8217;s company &#8216;Slater Designs&#8217;
+            ul.meta-data
+              li
+                a(href="#")
+                  | 16
+                  span.icon-comments
+              li
+                | 226
+                span.icon-views
+              li
+                | 388
+                span.icon-shares
+        article
+          .article-image
+            a(href="")
+              img(src="assets/images/article03.jpg", alt="")
+          .article-content
+            h3.heading
+              a(href="") Watch John John Florence in View From a Blue Moon
+            ul.meta-data
+              li
+                a(href="#")
+                  | 16
+                  span.icon-comments
+              li
+                | 226
+                span.icon-views
+              li
+                | 388
+                span.icon-shares
+        article
+          .article-image
+            a(href="")
+              img(src="assets/images/article04.jpg", alt="")
+          .article-content
+            h3.heading
+              a(href="") Bruce Irons back in the game? Signs two year contract with RVCA
+            ul.meta-data
+              li
+                a(href="#")
+                  | 16
+                  span.icon-comments
+              li
+                | 226
+                span.icon-views
+              li
+                | 388
+                span.icon-shares
+      // end related-article
+    // end body section
+    footer#footer.footer
+      .footer-top.row
+        .container
+          .row
+            .logo-footer.col-md-8.col-xs-6
+              a(href="")
+                img(src="assets/images/logo.png", alt="SportSta")
+            .col-md-4.col-xs-6
+              ul.nav.pull-left
+                li
+                  a(href="#") About Us
+                li
+                  a(href="#") Contact Us
+                li
+                  a(href="#") Advertisers
+              ul.nav.pull-left
+                li
+                  a(href="#") Terms of Service
+                li
+                  a(href="#") Privacy Policy
+      // end footer-top
+      .footer-bottom
+        .container
+          .row
+            .copyright.col-md-8.col-xs-6 @ Copyright Sportsta 2016
+            .social.col-md-4.col-xs-6
+              ul.social-menu
+                li
+                  a(href="#")
+                    span.icon-facebook
+                li
+                  a(href="#")
+                    span.icon-twitter
+      // end footer-bottom
+    // end footer
+    // Javascript
+    script(src="assets/javascripts/jquery-2.2.0.min.js")
+    script(src="assets/javascripts/bootstrap.min.js")
+    script(src="assets/javascripts/jquery.sticky-kit.min.js")
+    script(type="text/javascript", src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ed11e811f44d3ef", async="async")
+    script(src="assets/javascripts/main.js")
